@@ -213,6 +213,6 @@ int main(void) {
       img[i*h+j].b = sin(1.7*maxit/10*vz)*sin(1.7*maxit/10*vz);
     }
   }*/
-  //writeimage("test.pnm", img, 16, w, h);
+//  writeimage("test.pnm", img, 16, w, h);
 }
 

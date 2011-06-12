@@ -32,7 +32,7 @@ void writeimage(char * filename, color_dt *color, int depth, int w, int h) {
 inline int iterate(complex double z, complex double c, int mi, complex double *_z) {
   int it = 0;
   for (it = 0 ; it < mi; it++) {
-    if (creal(z)*creal(z) + cimag(z)*cimag(z) < 2.0f*2.0f) break;
+    if ((creal(z)*creal(z) + cimag(z)*cimag(z)) >= 4.0f) break;
     z = z*z + c;
 //    it++;
 //    if (it >= mi) {
